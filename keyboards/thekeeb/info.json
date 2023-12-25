@@ -4,8 +4,8 @@
     "maintainer": "CodingDevice",
     "keyboard_name": "The Keeb",
     "usb": {
-        "vid": "0x8D1D",
-        "pid": "0x343A",
+        "vid": "0x1A1A",
+        "pid": "0x1A1A",
         "device_version": "1.0.0"
     },
     "development_board": "elite_c",
@@ -82,7 +82,7 @@
         "cols": ["B2", "B6", "B3", "B1", "F7", "F6"]
     },
     "encoder": {
-        "enabled": true,
+        "enabled": false,
         "rotary": [
             {
                 "pin_a": "D4",
