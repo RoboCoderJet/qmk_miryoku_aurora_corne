@@ -16,12 +16,18 @@
 #include "quantum.h"
 #include QMK_KEYBOARD_H
 
-// The first four layers gets a name for readability, which is then used in the OLED below.
+// Using Miryoku layer names for readability, which is then used in the OLED below.
 enum layers {
-  _DEFAULT,
-  _LOWER,
-  _RAISE,
-  _ADJUST
+  _BASE,
+  _EXTRA,
+  _TAP,
+  _BUTTON,
+  _NAV,
+  _MOUSE,
+  _MEDIA,
+  _NUM,
+  _SYM,
+  _FUN,
 };
 
 #ifdef OLED_ENABLE
@@ -212,17 +218,21 @@ static void render_layer_state(void) {
         0x20, 0x9d, 0x9e, 0x9f, 0x20,
         0x20, 0xbd, 0xbe, 0xbf, 0x20,
         0x20, 0xdd, 0xde, 0xdf, 0x20, 0};
-    if(layer_state_is(_LOWER)) {
+
+    if(layer_state_is(_NUM)) {
         oled_write_P(lower_layer, false);
-    } else if(layer_state_is(_RAISE)) {
+    } else if(layer_state_is(_NAV)) {
+        oled_write_P(lower_layer, false);
+    } else if(layer_state_is(_SYM)) {
         oled_write_P(raise_layer, false);
-    } else if(layer_state_is(_DEFAULT)) {
+    } else if(layer_state_is(_MOUSE)) {
+        oled_write_P(raise_layer, false);
+    } else if(layer_state_is(_BASE)) {
         oled_write_P(default_layer, false);
     } else {
         oled_write_P(adjust_layer, false);
     }
 }
-
 
 bool oled_task_kb(void) {
     if (!oled_task_user()) {
