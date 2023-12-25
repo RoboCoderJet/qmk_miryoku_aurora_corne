@@ -34,7 +34,7 @@
 #    define RGB_MATRIX_LED_COUNT 54
 #    define RGB_MATRIX_SPLIT { 27, 27 }
 #    define SPLIT_TRANSPORT_MIRROR
-#    define RGB_MATRIX_TIMEOUT 300000       // number of milliseconds to wait until rgb automatically turns off, 60000 corresponds to 1 minute
+#    define RGB_MATRIX_TIMEOUT 300000      // number of milliseconds to wait until rgb automatically turns off, 60000 corresponds to 1 minute
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
 
 // RGB Matrix Animation modes. Explicitly enabled
