@@ -14,3 +14,8 @@ qmk compile -c -kb splitkb/aurora/corne/rev1 -km manna-harbour_miryoku -e MIRYOK
 ## B. The keeb build
 
 qmk compile -c -kb thekeeb -km default
+
+## C. The keeb miryoku build
+## Build steps
+
+qmk compile -c -kb thekeeb -km manna-harbour_miryoku
