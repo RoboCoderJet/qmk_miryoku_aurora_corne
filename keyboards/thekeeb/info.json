@@ -1,8 +1,8 @@
 {
-    "manufacturer": "splitkb.com",
-    "url": "https://splitkb.com/products/aurora-corne-pcb-kit",
-    "maintainer": "splitkb",
-    "keyboard_name": "Aurora Corne rev1",
+    "manufacturer": "York Keyboard Company",
+    "url": "https://www.kualo.co.uk/404",
+    "maintainer": "CodingDevice",
+    "keyboard_name": "The Keeb",
     "usb": {
         "vid": "0x8D1D",
         "pid": "0x343A",
