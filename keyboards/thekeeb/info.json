@@ -5,13 +5,13 @@
     "keyboard_name": "Aurora Corne rev1",
     "usb": {
         "vid": "0x8D1D",
-        "pid": "0x343A"
+        "pid": "0x343A",
         "device_version": "1.0.0"
     },
     "development_board": "elite_c",
     "build": {
         "lto": true
-    }
+    },
     "bootmagic": {
         "matrix": [0, 5]
     },
