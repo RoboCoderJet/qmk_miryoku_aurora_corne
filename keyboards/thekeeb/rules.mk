@@ -6,5 +6,6 @@
 # Setiing up Liartis microcontroller as target
 CONVERT_TO=rp2040_ce
 
-# Activates Repeat key functionality
+# Activates Repeat key and Key Lock functionalities
 REPEAT_KEY_ENABLE = yes
+KEY_LOCK_ENABLE = yes
